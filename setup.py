@@ -7,7 +7,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="powerdns-secondary-cleaner",
-    version="1.0",
+    version="1.0.1",
     description="Use powerdns-secondary-cleaner to delete zones on secondary PowerDNS server that were deleted on primary PowerDNS server.",
     long_description=long_description,
     long_description_content_type="text/markdown",
