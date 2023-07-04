@@ -34,7 +34,7 @@ Example when running on primary:
 
 Example when running on secondary:
 
-    powerdns-secondary-cleaner --secondary-api-url=http://primary.test:8081 --primary-api-key=example --primary-api-url=http://localhost:8081 --secondary-api-key=example
+    powerdns-secondary-cleaner --secondary-api-url=http://localhost:8081 --secondary-api-key=example --primary-api-url=http://primary.test:8081 --primary-api-key=example
 
 Only show which zones would be deleted on secondary:
 
