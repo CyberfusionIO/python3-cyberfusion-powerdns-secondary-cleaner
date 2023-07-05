@@ -5,6 +5,8 @@ from typing import List
 
 import requests
 
+TIMEOUT = 60
+
 
 @dataclass
 class Zone:
@@ -30,7 +32,7 @@ class PowerDNSAPI:
         """Execute GET request and get response."""
         request = requests.get(
             f"{self.api_url}/api/v1/servers/localhost/{endpoint}",
-            timeout=10,
+            timeout=TIMEOUT,
             headers={"X-API-Key": self.api_key},
         )
         request.raise_for_status()
@@ -41,7 +43,7 @@ class PowerDNSAPI:
         """Execute DELETE request."""
         request = requests.delete(
             f"{self.api_url}/api/v1/servers/localhost/{endpoint}",
-            timeout=10,
+            timeout=TIMEOUT,
             headers={"X-API-Key": self.api_key},
         )
         request.raise_for_status()
