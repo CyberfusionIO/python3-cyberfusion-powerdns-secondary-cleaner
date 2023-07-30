@@ -28,7 +28,7 @@ setup(
             "powerdns-secondary-cleaner=powerdns_secondary_cleaner.CLI:main"
         ]
     },
-    install_requires=["docopt==0.6.2", "schema==0.7.2", "requests==2.27.1"],
+    install_requires=["docopt==0.6.2", "schema==0.7.2", "requests==2.31.0"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
