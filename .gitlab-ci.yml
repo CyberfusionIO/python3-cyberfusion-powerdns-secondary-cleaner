@@ -13,7 +13,7 @@ stages:
 
 unit test and feature test:
   stage: test
-  image: python:3.9
+  image: python:3.11
   script:
     - pip install --no-cache-dir -r requirements/test.txt
     - pytest -vvv --cov-branch --cov=powerdns_secondary_cleaner --cov-config=.coveragerc --cov-fail-under=95 --junitxml=report-pytest.xml
