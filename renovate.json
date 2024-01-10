@@ -4,6 +4,9 @@
     "config:recommended"
   ],
   "pip_requirements": {
-    "fileMatch": ["requirements/base.txt"]
+    "fileMatch": ["requirements/base.txt", "requirements/dev.txt", "requirements/test.txt"]
+  },
+  "pre-commit": {
+    "enabled": true
   }
 }
