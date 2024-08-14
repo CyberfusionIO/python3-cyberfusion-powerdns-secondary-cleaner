@@ -39,9 +39,3 @@ Example when running on secondary:
 Only show which zones would be deleted on secondary:
 
     powerdns-secondary-cleaner ... --dry-run
-
-# Tests
-
-Run tests with pytest:
-
-    pytest tests/
