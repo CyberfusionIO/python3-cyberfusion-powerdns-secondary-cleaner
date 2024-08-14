@@ -11,9 +11,8 @@ setup(
     description="Use powerdns-secondary-cleaner to delete zones on secondary PowerDNS server that were deleted on primary PowerDNS server.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    python_requires=">=3.6",
-    author="William Edwards",
-    author_email="support@cyberfusion.nl",
+    author="Cyberfusion",
+    author_email="support@cyberfusion.io",
     url="https://github.com/CyberfusionIO/powerdns-secondary-cleaner",
     platforms=["linux"],
     packages=find_packages(
@@ -29,11 +28,4 @@ setup(
         ]
     },
     install_requires=["docopt==0.6.2", "schema==0.7.7", "requests==2.32.3"],
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
-    keywords=["cyberfusion", "powerdns"],
-    license="MIT",
 )
