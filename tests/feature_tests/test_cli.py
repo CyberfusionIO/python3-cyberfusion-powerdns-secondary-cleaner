@@ -43,9 +43,7 @@ def test_cli_absent(
 
     CLI.main()
 
-    delete_requests = [
-        r for r in requests_mock.request_history if r.method == "DELETE"
-    ]
+    delete_requests = [r for r in requests_mock.request_history if r.method == "DELETE"]
 
     assert len(delete_requests) == 1
     assert (

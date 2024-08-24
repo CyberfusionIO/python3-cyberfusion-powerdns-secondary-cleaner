@@ -33,9 +33,7 @@ def delete_mock(requests_mock: Mocker, secondary_api_url: str) -> None:
 
 
 @pytest.fixture
-def primary_zones_mock_absent(
-    requests_mock: Mocker, primary_api_url: str
-) -> list:
+def primary_zones_mock_absent(requests_mock: Mocker, primary_api_url: str) -> list:
     """Mock zones on primary where 1 zone is absent that is present on the secondary."""
     data = [
         {
@@ -53,17 +51,13 @@ def primary_zones_mock_absent(
         }
     ]
 
-    requests_mock.get(
-        f"{primary_api_url}/api/v1/servers/localhost/zones", json=data
-    )
+    requests_mock.get(f"{primary_api_url}/api/v1/servers/localhost/zones", json=data)
 
     return data
 
 
 @pytest.fixture
-def primary_zones_mock_present(
-    requests_mock: Mocker, primary_api_url: str
-) -> list:
+def primary_zones_mock_present(requests_mock: Mocker, primary_api_url: str) -> list:
     """Mock zones on primary where all zones are present that are present on the secondary."""
     data = [
         {
@@ -94,17 +88,13 @@ def primary_zones_mock_present(
         },
     ]
 
-    requests_mock.get(
-        f"{primary_api_url}/api/v1/servers/localhost/zones", json=data
-    )
+    requests_mock.get(f"{primary_api_url}/api/v1/servers/localhost/zones", json=data)
 
     return data
 
 
 @pytest.fixture
-def secondary_zones_mock(
-    requests_mock: Mocker, secondary_api_url: str
-) -> list:
+def secondary_zones_mock(requests_mock: Mocker, secondary_api_url: str) -> list:
     data = [
         {
             "account": "",
@@ -134,8 +124,6 @@ def secondary_zones_mock(
         },
     ]
 
-    requests_mock.get(
-        f"{secondary_api_url}/api/v1/servers/localhost/zones", json=data
-    )
+    requests_mock.get(f"{secondary_api_url}/api/v1/servers/localhost/zones", json=data)
 
     return data
