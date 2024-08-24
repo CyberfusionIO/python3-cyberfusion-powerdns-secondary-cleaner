@@ -42,9 +42,7 @@ def main() -> None:
 
     # Run classes
 
-    primary_api = PowerDNSAPI(
-        args["--primary-api-url"], args["--primary-api-key"]
-    )
+    primary_api = PowerDNSAPI(args["--primary-api-url"], args["--primary-api-key"])
     primary_zones = primary_api.get_zones()
 
     secondary_api = PowerDNSAPI(
