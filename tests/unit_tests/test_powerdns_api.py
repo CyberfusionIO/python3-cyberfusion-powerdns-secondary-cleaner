@@ -1,4 +1,4 @@
-from powerdns_secondary_cleaner.powerdns_api import PowerDNSAPI, Zone
+from cyberfusion.PowerDNSSecondaryCleaner.powerdns_api import PowerDNSAPI, Zone
 
 
 def test_get_zones(
