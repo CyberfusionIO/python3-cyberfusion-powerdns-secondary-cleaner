@@ -4,7 +4,7 @@ from _pytest.capture import CaptureFixture
 from pytest_mock import MockerFixture
 from requests_mock.mocker import Mocker
 
-from powerdns_secondary_cleaner import CLI
+from cyberfusion.PowerDNSSecondaryCleaner import CLI
 
 
 def test_cli_get_args() -> None:
@@ -25,7 +25,7 @@ def test_cli_absent(
     secondary_zones_mock: list,
 ) -> None:
     mocker.patch(
-        "powerdns_secondary_cleaner.CLI.get_args",
+        "cyberfusion.PowerDNSSecondaryCleaner.CLI.get_args",
         return_value=docopt.docopt(
             CLI.__doc__,
             [
@@ -72,7 +72,7 @@ def test_cli_absent_dry_run(
     secondary_zones_mock: list,
 ) -> None:
     mocker.patch(
-        "powerdns_secondary_cleaner.CLI.get_args",
+        "cyberfusion.PowerDNSSecondaryCleaner.CLI.get_args",
         return_value=docopt.docopt(
             CLI.__doc__,
             [
@@ -111,7 +111,7 @@ def test_cli_present(
     secondary_zones_mock: list,
 ) -> None:
     mocker.patch(
-        "powerdns_secondary_cleaner.CLI.get_args",
+        "cyberfusion.PowerDNSSecondaryCleaner.CLI.get_args",
         return_value=docopt.docopt(
             CLI.__doc__,
             [

@@ -15,7 +15,7 @@ Options:
 import docopt
 from schema import Schema
 
-from powerdns_secondary_cleaner.powerdns_api import PowerDNSAPI
+from cyberfusion.PowerDNSSecondaryCleaner.powerdns_api import PowerDNSAPI
 
 
 def get_args() -> docopt.Dict:

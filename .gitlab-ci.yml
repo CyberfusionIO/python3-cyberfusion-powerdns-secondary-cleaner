@@ -17,7 +17,7 @@ unit test and feature test:
   script:
     - pip install --no-cache-dir -r requirements/test.txt
     - pip install .
-    - pytest -n 10 -vvv --cov-branch --cov=powerdns_secondary_cleaner --cov-config=.coveragerc --cov-fail-under=95 --junitxml=report-pytest.xml
+    - pytest -n 10 -vvv --cov-branch --cov=cyberfusion.PowerDNSSecondaryCleaner --cov-config=.coveragerc --cov-fail-under=95 --junitxml=report-pytest.xml
   artifacts:
     reports:
       junit: report-*.xml
