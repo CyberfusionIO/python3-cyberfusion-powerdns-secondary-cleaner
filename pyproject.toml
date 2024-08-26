@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "powerdns-secondary-cleaner"
+version = "1.0.3"
+description = "Use powerdns-secondary-cleaner to delete zones on secondary PowerDNS server that were deleted on primary PowerDNS server."
+readme = "README.md"
+authors = [
+    { name = "Cyberfusion", email = "support@cyberfusion.io" },
+]
+dependencies = [
+    "docopt==0.6.2",
+    "schema==0.7.7",
+    "requests==2.32.3",
+]
+
+[project.urls]
+"Source" = "https://github.com/CyberfusionIO/powerdns-secondary-cleaner"
+
+[project.scripts]
+powerdns-secondary-cleaner = "powerdns_secondary_cleaner.CLI:main"

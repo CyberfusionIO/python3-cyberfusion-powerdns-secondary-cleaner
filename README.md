@@ -6,12 +6,6 @@ Use powerdns-secondary-cleaner to delete zones on secondary PowerDNS server that
 
 # Install
 
-## Generic
-
-Run the following command to create a source distribution:
-
-    python3 setup.py sdist
-
 ## PyPI
 
 Run the following command to install the package from PyPI:
