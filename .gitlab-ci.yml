@@ -4,6 +4,7 @@ include:
     file:
       - '/base.yml'
       - '/pypi-packages.yml'
+      - '/debian-packages.yml'
       - '/python.yml'
 
 stages:
@@ -13,7 +14,7 @@ stages:
 
 unit test and feature test:
   stage: test
-  image: python:3.12
+  image: python:3.11
   script:
     - pip install --no-cache-dir -r requirements/test.txt
     - pip install .
