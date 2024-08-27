@@ -7,6 +7,9 @@ include:
       - '/debian-packages.yml'
       - '/python.yml'
 
+variables:
+  APTLY_BASE_REPOSITORY: common
+
 stages:
   - test
   - build
