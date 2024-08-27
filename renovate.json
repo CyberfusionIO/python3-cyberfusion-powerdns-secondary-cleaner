@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "local>shared/renovate-config:python-standalone"
+    "local>shared/renovate-config:python-debian"
   ]
 }
