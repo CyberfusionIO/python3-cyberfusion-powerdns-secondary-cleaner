@@ -1,4 +1,4 @@
-mypy==1.11.2
-pre-commit==4.0.1
-ruff==0.6.2
-types-requests==2.32.0.20240712
+mypy==1.15.0
+pre-commit==4.2.0
+ruff==0.11.5
+types-requests==2.32.0.20250328
