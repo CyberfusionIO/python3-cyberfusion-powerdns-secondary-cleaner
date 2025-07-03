@@ -1,4 +1,4 @@
 mypy==1.16.1
 pre-commit==4.2.0
-ruff==0.12.1
+ruff==0.12.2
 types-requests==2.32.4.20250611
