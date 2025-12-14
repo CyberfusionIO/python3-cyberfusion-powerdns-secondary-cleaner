@@ -1,3 +1,9 @@
+python3-cyberfusion-powerdns-secondary-cleaner (1.1) unstable; urgency=low
+
+  - Update to Trixie
+
+ -- William Edwards <wedwards@cyberfusion.nl>  Sun, 14 Dec 2025 12:31:00 +0200
+
 python3-cyberfusion-powerdns-secondary-cleaner (1.0.4.2.1) unstable; urgency=low
 
   - Fix apt upload
