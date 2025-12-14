@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "python3-cyberfusion-powerdns-secondary-cleaner"
-version = "1.0.4.2.1"
+version = "1.1"
 description = "Use powerdns-secondary-cleaner to delete zones on secondary PowerDNS server that were deleted on primary PowerDNS server."
 readme = "README.md"
 authors = [
@@ -12,8 +12,8 @@ authors = [
 ]
 dependencies = [
     "docopt==0.6.2",
-    "schema==0.7.5",
-    "requests==2.28.1",
+    "schema==0.7.7",
+    "requests==2.32.3",
 ]
 
 [project.urls]

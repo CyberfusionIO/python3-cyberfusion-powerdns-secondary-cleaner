@@ -17,7 +17,7 @@ stages:
 
 unit test and feature test:
   stage: test
-  image: python:3.11
+  image: python:3.13
   script:
     - pip install --no-cache-dir -r requirements/test.txt
     - pip install .
