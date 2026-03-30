@@ -13,7 +13,7 @@ authors = [
 dependencies = [
     "docopt==0.6.2",
     "schema==0.7.8",
-    "requests==2.33.0",
+    "requests==2.33.1",
 ]
 
 [project.urls]
